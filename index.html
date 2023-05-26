@@ -21,13 +21,16 @@
         </ul>
       </nav>
       <article class="content">
-        <h1>Main article area</h1>
-        <p>
-          In this layout, we display the areas in source order for any screen
-          less that 500 pixels wide. We go to a two column layout, and then to a
-          three column layout by redefining the grid, and the placement of items
-          on the grid.
-        </p>
+        <div class="container-new-note">
+          <input type="text" name="title-note" placeholder="The litle for my new note" class="input input__content input-note"></input>
+          <textarea placeholder="This is the body for the note" name="text-note" class="text-area-note input__content input-note-text"></textarea>
+          <div class="container-button">
+          <a href="">
+            <img src="images/Frame 7.svg" alt="icon-link" />
+          </a>
+          <button class="button--sm">Keep it!</button>
+          </div>
+        </div>
       </article>
     </div>
   </body>
