@@ -160,3 +160,26 @@
     min-height: 100vh;
   }
 }
+
+.text-area-note {
+  width: 100%;
+  min-width: 312px;
+  min-height: 96px;
+  resize: none;
+}
+
+.container-new-note {
+  margin: auto;
+  margin-top: 20px;
+  padding: 20px 20px;
+  max-width: 600px;
+  min-height: 150px;
+  background-color: #fff;
+  border-radius: 8px;
+  border: none;
+}
+
+.container-button {
+  display: flex;
+  justify-content: space-between;
+}

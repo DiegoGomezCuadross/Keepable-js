@@ -205,3 +205,27 @@
 .checkbox__opt-group--horizontal {
   flex-direction: row;
 }
+
+.input-note {
+  max-width: 560px;
+  max-height: 20px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 20px;
+  color: #000000;
+  margin-bottom: 10px;
+}
+
+.input-note-text {
+  max-width: 560px;
+  max-height: 24px;
+
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+  color: #000000;
+}
