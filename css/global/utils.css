@@ -117,16 +117,9 @@
   padding: 0;
 }
 
-.container {
-  min-width: 1440px;
-  min-height: 1024px;
-
-  background: white;
-}
-
 .wrapper {
   display: grid;
-  gap: 10px;
+  gap: 3px;
   grid-template-areas:
     "header"
     "nav"
@@ -136,15 +129,20 @@
 
 .main-head {
   grid-area: header;
+  height: 50px;
   background-color: black;
 }
 .content {
   grid-area: content;
   background-color: black;
+  min-width: 1167px;
+  min-height: 100vh;
 }
 .main-nav {
   grid-area: nav;
   background-color: black;
+  min-width: 280px;
+  min-height: 100px;
 }
 
 @media (min-width: 700px) {
@@ -155,7 +153,10 @@
       "nav    content content"
       "nav    content content";
   }
-  nav ul {
-    flex-direction: column;
+  .main-nav {
+    min-height: 100vh;
+  }
+  .content {
+    min-height: 100vh;
   }
 }
