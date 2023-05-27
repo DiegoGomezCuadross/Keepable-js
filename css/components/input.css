@@ -209,12 +209,12 @@
 .input-note {
   max-width: 560px;
   max-height: 20px;
+
   font-family: "Roboto";
   font-style: normal;
   font-weight: 700;
   font-size: 14px;
   line-height: 20px;
-  color: #000000;
   margin-bottom: 10px;
 }
 
@@ -226,6 +226,10 @@
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
-  line-height: 24px;
-  color: #000000;
+}
+
+.container-notes {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
 }

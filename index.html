@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Keepable</title>
     <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
   </head>
   <body class="">
     <div class="wrapper">
@@ -21,17 +22,48 @@
         </ul>
       </nav>
       <article class="content">
-        <div class="container-new-note">
+        <div id="note-content" class="container-new-note">
           <input type="text" name="title-note" placeholder="The litle for my new note" class="input input__content input-note"></input>
-          <textarea placeholder="This is the body for the note" name="text-note" class="text-area-note input__content input-note-text"></textarea>
+          <textarea id="note-content" placeholder="This is the body for the note" name="text-note" class="text-area-note input__content input-note-text"></textarea>
           <div class="container-button">
-          <a href="">
-            <img src="images/Frame 7.svg" alt="icon-link" />
-          </a>
-          <button class="button--sm">Keep it!</button>
+            <div class="color-palette">
+              <div class="color" data-color="#ff0000"></div>
+              <div class="color" data-color="#F28B82"></div>
+              <div class="color" data-color="#0000ff"></div>
+              <!-- Agrega más colores de paleta aquí -->
+            </div>
+            <img class="color-icon" src="images/palette.svg">
+            <button class="button--sm">Keep it!</button>
           </div>
         </div>
+
+        <main class="section">
+          <div>
+            <ul role="list" class="container-notes">
+              <div class="container-note" data-id="1">
+                <li>
+                  <div>
+                    <p>This is the title</p>
+                    <p>This is the body for the note.</p>
+                  </div>
+                </li>
+                <div class="container-icon-note">
+                 <div class="color-palette">
+                  <div class="color" data-color="#ff0000"></div>
+                  <div class="color" data-color="#F28B82"></div>
+                  <div class="color" data-color="#0000ff"></div>
+                  <!-- Agrega más colores de paleta aquí -->
+                 </div>
+                 <img class="color-icon" src="images/palette.svg">
+                 <img id="" src="images/trash-can.svg">
+                </div>
+              </div>     
+            </ul>
+          </div>
+        </main>
+
       </article>
     </div>
+    <script src="index.js"></script>
   </body>
 </html>

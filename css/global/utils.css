@@ -183,3 +183,69 @@
   display: flex;
   justify-content: space-between;
 }
+
+.container-note {
+  position: relative;
+  width: 260px;
+  height: 260px;
+
+  background: #ffffff;
+  border-radius: 8px;
+  padding: 20px 20px 0px;
+}
+
+.container-icon-note {
+  position: absolute; /* Añade posicionamiento absoluto a los iconos */
+  bottom: 0;
+  display: flex;
+  justify-content: flex-start;
+}
+
+/* CHAT GPT */
+
+.note {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.color-icon {
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+#note-content {
+  width: 100%;
+}
+
+.color-palette {
+  /* display: none; */
+  padding: 5px;
+  display: flex;
+  position: absolute;
+  top: -70%;
+  left: 0;
+  background-color: white;
+  box-shadow: 4px 5px 17px 0px rgba(0, 0, 0, 0.75);
+}
+
+.color {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  margin-right: 5px;
+  cursor: pointer;
+}
+
+/* Agrega estilos de colores según tu preferencia */
+.color[data-color="#ff0000"] {
+  background-color: #ff0000;
+}
+
+.color[data-color="#F28B82"] {
+  background-color: #f28b82;
+}
+
+.color[data-color="#0000ff"] {
+  background-color: #0000ff;
+}
