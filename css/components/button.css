@@ -17,6 +17,7 @@
   transition: transform 150ms;
 }
 
+
 .button:active {
   transform: translateY(0.25rem);
 }
@@ -79,12 +80,17 @@
   border: none;
   background: white;
   font-weight: bold;
-
+  background: transparent;
+  cursor: pointer;
   font-family: "Roboto";
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
   line-height: 24px;
+}
+
+.button--sm:disabled {
+  cursor: not-allowed;
 }
 
 .button--lg {

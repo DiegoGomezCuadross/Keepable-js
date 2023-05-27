@@ -17,53 +17,55 @@
       </header>
       <nav class="main-nav">
         <ul>
-          <li><a href="">Notes</a></li>
-          <li><a href="">Trash</a></li>
+          <li><button src="images/Vector.svg" id="show-notes" class="buttom">Notes</button></li>
+          <li><button id="trash-notes" class="buttom">Trash</button></li>
         </ul>
       </nav>
-      <article class="content">
+      <article id="notes-page" class="content">
         <div id="note-content" class="container-new-note">
-          <input type="text" name="title-note" placeholder="The litle for my new note" class="input input__content input-note"></input>
-          <textarea id="note-content" placeholder="This is the body for the note" name="text-note" class="text-area-note input__content input-note-text"></textarea>
+
+          <input type="text" placeholder="The litle for my new note" class="input input__content input-note" id="note-title"></input>
+
+          <textarea id="note-description" placeholder="This is the body for the note" name="text-note" class="text-area-note input__content input-note-text"></textarea>
+
           <div class="container-button">
-            <div class="color-palette">
-              <div class="color" data-color="#ff0000"></div>
-              <div class="color" data-color="#F28B82"></div>
-              <div class="color" data-color="#0000ff"></div>
-              <!-- Agrega más colores de paleta aquí -->
+            <div class="paleta">
+              <span class="color"></span>
+              <span class="color"></span>
+              <span class="color"></span>
+              <span class="color"></span>
+              <span class="color"></span>
+              <span class="color"></span>
+              <span class="color"></span>
+              <span class="color"></span>
+              <span class="color"></span>
+              <span class="color"></span>
             </div>
             <img class="color-icon" src="images/palette.svg">
-            <button class="button--sm">Keep it!</button>
+            <button id="add-note" class="button--sm" disabled>Keep it!</button>
           </div>
         </div>
 
         <main class="section">
           <div>
-            <ul role="list" class="container-notes">
-              <div class="container-note" data-id="1">
-                <li>
-                  <div>
-                    <p>This is the title</p>
-                    <p>This is the body for the note.</p>
-                  </div>
-                </li>
-                <div class="container-icon-note">
-                 <div class="color-palette">
-                  <div class="color" data-color="#ff0000"></div>
-                  <div class="color" data-color="#F28B82"></div>
-                  <div class="color" data-color="#0000ff"></div>
-                  <!-- Agrega más colores de paleta aquí -->
-                 </div>
-                 <img class="color-icon" src="images/palette.svg">
-                 <img id="" src="images/trash-can.svg">
-                </div>
-              </div>     
+            <ul role="list" class="container-notes" id="list-notes">
+                  
             </ul>
           </div>
         </main>
+      </article>
 
+      <article id="trash-page" class="content">
+        <main class="section">
+          <div>
+            <ul role="list" class="container-notes" id="list-trash-notes">
+                  
+            </ul>
+          </div>
+        </main>
       </article>
     </div>
     <script src="index.js"></script>
+    <script src="events.js"></script>
   </body>
 </html>
