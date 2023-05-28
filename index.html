@@ -12,13 +12,23 @@
       <header class="main-head">
         <div class="logo">
           <img src="images/{keepable}.svg" alt="logo" />
-          <span>Welcome to {keepable}</span>
+          <span style="color: white;">Welcome to {keepable}</span>
         </div>
       </header>
       <nav class="main-nav">
-        <ul>
-          <li><button src="images/Vector.svg" id="show-notes" class="buttom">Notes</button></li>
-          <li><button id="trash-notes" class="buttom">Trash</button></li>
+        <ul class="container-buttons">
+          <li class="container-button">
+            <button id="show-notes" class="button button-note button--lg w-full">
+            <i class="ri-braces-line"></i>
+              Notes
+            </button>
+          </li>
+          <li class="container-button">
+            <button id="trash-notes" class="button button-note button--lg w-full">
+            <i class="ri-delete-bin-line"></i>  
+              Trash
+            </button>
+          </li>
         </ul>
       </nav>
       <article id="notes-page" class="content">

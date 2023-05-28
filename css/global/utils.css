@@ -129,29 +129,25 @@
 
 .main-head {
   grid-area: header;
-  height: 50px;
-  background-color: black;
+  height: 80px;
+  background-color: #1d2128;
 }
 .content {
-  grid-area: content;
-  background-color: black;
-  min-width: 1167px;
-  min-height: 100vh;
+  grid-area: notes;
+  background-color: #1d2128;
 }
 .main-nav {
   grid-area: nav;
-  background-color: black;
-  min-width: 280px;
-  min-height: 100px;
+  background-color: #1d2128;
 }
 
 @media (min-width: 700px) {
   .wrapper {
-    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-columns: 0.3fr 1.4fr;
     grid-template-areas:
-      "header header  header"
-      "nav    content content"
-      "nav    content content";
+      "header header"
+      "nav    notes"
+      "nav    notes";
   }
   .main-nav {
     min-height: 100vh;
@@ -249,10 +245,6 @@
   background-color: #0000ff;
 }
 
-.active {
-  background-color: red;
-}
-
 #trash-page {
   display: none;
 }
@@ -338,4 +330,18 @@
 
 .paleta.active {
   display: flex;
+}
+
+.message-note {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 48px;
+  /* identical to box height, or 133% */
+
+  text-align: center;
+  letter-spacing: 0.25px;
+
+  color: #ffffff;
 }

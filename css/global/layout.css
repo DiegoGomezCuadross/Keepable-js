@@ -20,3 +20,18 @@
   max-width: 1280px;
   margin: auto;
 }
+
+.container-button {
+  width: 280px;
+  height: 48px;
+}
+
+.container-buttons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px 0px;
+  gap: 10px;
+  width: 280px;
+  height: 126px;
+}
