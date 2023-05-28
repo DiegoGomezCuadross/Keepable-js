@@ -21,8 +21,9 @@
 .logo {
   display: flex;
   align-items: center;
-  gap: 0.5rem;
+  gap: 7rem;
   color: var(--gray-500);
+  margin: 23px 117px 23px 30px;
 }
 
 .navbar-links {

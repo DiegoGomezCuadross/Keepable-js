@@ -38,17 +38,20 @@ function loadToTrashStorage() {
   localStorage.setItem("trash", JSON.stringify(deletedNotes));
 }
 
-function addNewNote() {
+function addNewNote({ target }) {
+  const color = window.getComputedStyle(
+    target.parentElement.parentElement
+  ).backgroundColor;
   const title = noteTitle.value;
   const description = noteDescription.value;
-  buildNewNote(title, description);
+  buildNewNote(title, description, color);
 }
 
-function buildNewNote(title, description) {
+function buildNewNote(title, description, color) {
   const note = {
     title,
     description,
-    bg: "#fff",
+    bg: color,
   };
 
   const existNote = activeNotes.some((value) => value.title === note.title);
@@ -70,7 +73,7 @@ function buildNewNote(title, description) {
 function printToActiveHtml() {
   listActive.innerHTML = "";
   if (activeNotes.length === 0) {
-    listActive.innerHTML = '<p class="empty">No hay notas activas</p>';
+    listActive.innerHTML = '<p class="message-note">No notes to keep</p>';
   } else {
     activeNotes.map((note) => {
       const divElement = document.createElement("div");
