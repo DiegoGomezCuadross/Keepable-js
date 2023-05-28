@@ -22,7 +22,7 @@
 }
 
 .container-button {
-  width: 280px;
+  /* width: 280px; */
   height: 48px;
 }
 
@@ -34,4 +34,10 @@
   gap: 10px;
   width: 280px;
   height: 126px;
+}
+
+.container-notes {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
 }

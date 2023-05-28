@@ -219,11 +219,10 @@
   background: transparent;
 }
 
-.input-note::placeholder, .input-note-text::placeholder {
+.input-note::placeholder,
+.input-note-text::placeholder {
   color: #707070;
 }
-
-
 
 .input-note-text {
   max-width: 560px;
@@ -233,10 +232,4 @@
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
-}
-
-.container-notes {
-  display: flex;
-  gap: 10px;
-  flex-wrap: wrap;
 }

@@ -179,6 +179,7 @@
   display: flex;
   justify-content: space-between;
   position: relative;
+  width: 100%;
 }
 
 .container-note {
@@ -332,16 +333,18 @@
   display: flex;
 }
 
+.button-note.active-page {
+  background-color: #999b9e;
+}
+
 .message-note {
   font-family: "Roboto";
   font-style: normal;
   font-weight: 700;
   font-size: 36px;
   line-height: 48px;
-  /* identical to box height, or 133% */
-
   text-align: center;
   letter-spacing: 0.25px;
-
+  margin: 0 auto;
   color: #ffffff;
 }

@@ -178,26 +178,3 @@ function deleteCurrentNote({ target }) {
     loadToTrashStorage();
   }
 }
-
-const notesPage = $("#show-notes");
-const trashPage = $("#trash-notes");
-
-notesPage.addEventListener("click", () => {
-  notesPage.classList.add("active");
-  trashPage.classList.remove("active");
-
-  if (notesPage.classList.contains("active")) {
-    $("#notes-page").style.display = "block";
-    $("#trash-page").style.display = "none";
-  }
-});
-
-trashPage.addEventListener("click", () => {
-  notesPage.classList.remove("active");
-  trashPage.classList.add("active");
-
-  if (trashPage.classList.contains("active")) {
-    $("#notes-page").style.display = "none";
-    $("#trash-page").style.display = "block";
-  }
-});
