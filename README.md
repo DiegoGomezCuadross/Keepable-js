@@ -1,5 +1,7 @@
 # Keepable-js
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/a5259c3f-50fd-4101-bd25-4da7bed018e3/deploy-status)](https://app.netlify.com/sites/keapeable-diegogomezcuadross/deploys)
+
 Keepable is a take-nothing service and productivity app designed by Codeable students in which users can post amazing notes.
 
 ## Resources
