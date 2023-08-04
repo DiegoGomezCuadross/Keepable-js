@@ -115,3 +115,7 @@ Then I see a list of deleted notes.
 
 -When I click the arrow up icon button
 Then current note will be recovered and shown in the notes view again.
+
+## License
+
+[MIT](/LICENCE)
